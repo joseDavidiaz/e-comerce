@@ -1,28 +1,22 @@
-import logo from "./logo.jpg";
-
-
 function App() {
   return (
     <>
       <div class="flex flex-wrap h-screen">
         <section class="relative mx-auto">
-          <nav class="flex justify-between bg-black text-amber-300 w-screen">
+          <nav class="flex justify-between bg-gray-900 text-white w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
               <a class="text-3xl font-bold font-heading" href="#">
-                <img class="h-9" src={logo} alt="logo" />
+                <img class="h-9" src="logo.png" alt="logo" />
               </a>
-              <div>
-              <p>RAP WEB</p>
-              </div>
 
               <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                 <li>
-                  <a class=" hover:text-gray-200" href="#">
+                  <a class="hover:text-gray-200" href="#">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a class="hover:text-green-500" href="#">
+                  <a class="hover:text-gray-200" href="#">
                     Catagory
                   </a>
                 </li>
@@ -32,7 +26,7 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a class="hover:text-blue-500" href="#">
+                  <a class="hover:text-gray-200" href="#">
                     Contact Us
                   </a>
                 </li>
@@ -134,6 +128,21 @@ function App() {
         </section>
       </div>
 
+      <div class="absolute bottom-0 right-0 mb-4 mr-4 z-10">
+        <div>
+          <a
+            title="Follow me on twitter"
+            href="https://www.twitter.com/asad_codes"
+            target="_blank"
+            class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+          >
+            <img
+              class="object-cover object-center w-full h-full rounded-full"
+              src="https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/12/twitter-logo.jpg"
+            />
+          </a>
+        </div>
+      </div>
     </>
   );
 }
