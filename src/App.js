@@ -1,11 +1,13 @@
 import logo from "./logo.jpg";
+import NavBar from "./Componetes/NavBar"
+import ListProductos from "./Componetes/ListProductos"
 
 
 function App() {
   return (
     <>
-      <div class="flex flex-wrap h-screen">
-        <section class="relative mx-auto">
+      <div class="flex flex-wrap">
+        <section class="mx-auto">
           <nav class="flex justify-between bg-black text-amber-300 w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
               <a class="text-3xl font-bold font-heading" href="#">
@@ -133,9 +135,18 @@ function App() {
           </nav>
         </section>
       </div>
+    
+<ListProductos>
+  <p> Productos </p>
+</ListProductos>
+
+
+     
 
     </>
   );
 }
+
+
 
 export default App;
