@@ -1,6 +1,9 @@
+import './App.css';
+import React, {useState, useEffect} from 'react'
 import logo from "./logo.jpg";
-import NavBar from "./Componetes/NavBar"
-import ListProductos from "./Componetes/ListProductos"
+import ListProducts from "./Componetes/ListProducts.js/ListProducts"
+
+
 
 
 function App() {
@@ -136,10 +139,8 @@ function App() {
         </section>
       </div>
     
-<ListProductos>
-  <p> Productos </p>
-</ListProductos>
-
+<ListProducts />
+ 
 
      
 
